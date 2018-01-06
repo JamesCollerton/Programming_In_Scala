@@ -21,12 +21,12 @@ object OptionSomeNone {
 		val genders = for {
 			user <- userArray
 			gender <- user.gender match {
-				case Some => user.gender 
 				case None => None
+				case _ => user.gender
 			}
 		} yield gender
 
-		userArray.map(user => user.gender).foreach(gender => println(gender))
+		genders.foreach(gender => println(gender))
 
 	}
 
