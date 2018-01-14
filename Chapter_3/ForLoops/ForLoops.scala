@@ -38,6 +38,21 @@ object ForLoops {
 
 		upperCaseOne.foreach(println)
 
+		// Comprehensions for option list
+		val optionList = List(Some("One"), None, Some("Two"), None, Some("Three"))
+
+		// So by assigning a variable we get rid of None
+		for {
+			option <- optionList
+			op <- option
+		} println(op)
+
+		println()
+
+		// Equivalent to above
+		for {
+			Some(option) <- optionList
+		} println(option)
 	}
 
 }
