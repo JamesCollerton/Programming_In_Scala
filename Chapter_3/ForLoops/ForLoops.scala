@@ -24,6 +24,20 @@ object ForLoops {
 
 		for (div <- divisors.distinct) println(div)
 
+		println()
+
+		// Defining variables in the loop
+		val upperCaseOne = for {
+			li <- listOne
+			upperCase = li.toUpperCase()
+			ret <- upperCase match {
+					case "ONE" => Some(upperCase)
+					case _ => None
+				}
+		} yield ret
+
+		upperCaseOne.foreach(println)
+
 	}
 
 }
