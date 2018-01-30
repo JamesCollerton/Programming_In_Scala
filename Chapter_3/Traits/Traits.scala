@@ -10,7 +10,10 @@ object Traits {
 			}
 		}
 
+		val serviceTwo = new ServiceTwo()
+
 		(1 to 3).foreach(service.work(_))
+		(1 to 3).foreach(serviceTwo.work(_))
 
 	}
 
