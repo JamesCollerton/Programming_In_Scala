@@ -13,6 +13,7 @@ object FoldReduce {
 		val listTwo = List(1, 2, 6)
 		// 6 - (2 - 1)
 		println(listTwo.reduceRight(_ - _))
+		println(foldR(listTwo)(_ - _))
 	}
 
 	def foldL[A](value: A, seq: Seq[A])(f: (A, A) => A): A = seq match {
@@ -20,6 +21,9 @@ object FoldReduce {
 		case _ => value
 	}
 	
-	def foldR[A, B](seq: Seq[A])(f: (A, B) => B): B = ???
+	def foldR[A](seq: Seq[A])(f: (A, A) => A): A = seq match {
+		case head +: tail if tail != Seq.empty[A] => f(head, foldR(tail)(f))
+		case head +: tail if tail == Seq.empty[A] => head 
+	}
 
 }
