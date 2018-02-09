@@ -16,6 +16,7 @@ object FoldReduce {
 		println(foldR(listTwo)(_ - _))
 	}
 
+	@annotation.tailrec
 	def foldL[A](value: A, seq: Seq[A])(f: (A, A) => A): A = seq match {
 		case head +: tail => foldL(f(value, head), tail)(f)
 		case _ => value
