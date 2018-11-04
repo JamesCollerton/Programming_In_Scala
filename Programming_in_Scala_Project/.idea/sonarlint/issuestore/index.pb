@@ -1,0 +1,19 @@
+
+9
+	build.sbt,7\4\74b95601c3a6d9d565cd312fac64094ec0f9d847
+`
+0src/main/scala/chapterone/CaseClassExample.scala,a\7\a76522ce68b6c7672cdd3a7728c24a8db907e65c
+d
+4src/test/scala/chapterone/CaseClassExampleTest.scala,5\f\5f19258f0a26b11a44dbd5470c70d1fc8aab4045
+{
+Ksrc/test/scala/chaptertwo/partialfunctions/PartialFunctionExampleTest.scala,7\8\782dc45b76a4fd4d9a4e8033ef246e39bae61cd2
+w
+Gsrc/main/scala/chaptertwo/partialfunctions/PartialFunctionExample.scala,4\1\418151dee3f532915de6e588e3235f7836cbe8e0
+r
+Bsrc/test/scala/chaptertwo/nestedfunctions/NestedFunctionTest.scala,a\6\a6346b73d755d403a37a93afe3dd028416f3efed
+n
+>src/main/scala/chaptertwo/nestedfunctions/NestedFunction.scala,8\0\80ca14e22cd603ae6842bc94b615b1102142f2c7
+w
+Gsrc/main/scala/chaptertwo/implicitconversions/ImplicitConversions.scala,3\d\3d022906e89d4678b141aea435e90cfd1ee7182e
+{
+Ksrc/test/scala/chaptertwo/implicitconversions/ImplicitConversionsTest.scala,c\2\c27499f0fa9f3b4f84e93dbe6c9d0e709d58c369
